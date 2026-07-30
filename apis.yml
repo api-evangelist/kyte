@@ -1,20 +1,133 @@
 aid: kyte
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kyte.png
 name: Kyte
-description: Kyte is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Kyte was a full-stack technology-operations company that delivered rental
+  cars on demand to the customer''s door, positioning itself for any trip longer than
+  a rideshare — a car for a day, a few days, or longer — with no rental counters, no
+  lines and no paperwork. Headquartered in San Francisco, the company combined a consumer
+  mobile and web booking experience with its own fleet and delivery operations ("bits
+  and atoms"), and at its peak operated in 14 US markets delivering tens of thousands
+  of trips per month. It was a growth-stage portfolio company of Anthemis under that
+  firm''s Data, Tech and Infrastructure thesis. Kyte was a consumer-facing operator
+  and never published a public developer program, API, SDK or developer portal, and
+  as of this enrichment pass its web properties no longer serve the company.'
 url: https://raw.githubusercontent.com/api-evangelist/kyte/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - anthemis
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
+x-status: defunct
+x-status-evidence: 'Probed 2026-07-19: https://www.kyte.com/ returns 403 and redirects
+  to https://saw.com/buy?domain=kyte.com (domain listed for sale); https://drivekyte.com/
+  redirects to an unrelated site (egyptjustice.com). The last archived snapshot of
+  kyte.com serving Kyte marketing content is 2025-10-04; snapshots from 2025-11 onward
+  are a parked lander.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Mobility
+- Transportation
+- Car Rental
+- Vehicle Delivery
+- Consumer Marketplace
+- Logistics
+- Travel
+- Defunct
+- No Public API
 apis: []
+common:
+- name: Anthemis Portfolio Profile
+  description: Investor profile for Kyte on the Anthemis portfolio site (third-party
+    source used to identify this company).
+  type: InvestorProfile
+  url: https://www.anthemis.com/portfolio/kyte/
+- name: LinkedIn
+  description: Kyte company page on LinkedIn.
+  type: LinkedIn
+  url: https://www.linkedin.com/company/drivekyte/
+- name: X (Twitter)
+  description: Kyte account on X, formerly Twitter.
+  type: Twitter
+  url: https://twitter.com/DriveKyte
+x-former-domains:
+- domain: drivekyte.com
+  role: original primary domain
+  status_2026_07_19: redirects offsite to an unrelated parked site
+- domain: kyte.com
+  role: later primary domain
+  status_2026_07_19: listed for sale via saw.com
+x-enrichment:
+  last_run: '2026-07-19'
+  outcome: no-api-surface
+  probes:
+  - url: https://www.kyte.com/
+    status: 403
+    note: redirects to https://saw.com/buy?domain=kyte.com
+  - url: https://www.kyte.com/robots.txt
+    status: 404
+  - url: https://www.kyte.com/llms.txt
+    status: 404
+  - url: https://www.kyte.com/.well-known/security.txt
+    status: 404
+  - url: https://www.kyte.com/developers
+    status: 404
+  - url: https://www.kyte.com/api
+    status: 404
+  - url: https://api.kyte.com/
+    status: 0
+    note: does not resolve
+  - url: https://docs.kyte.com/
+    status: 0
+    note: does not resolve
+  - url: https://developers.kyte.com/
+    status: 0
+    note: does not resolve
+  - url: https://status.kyte.com/
+    status: 0
+    note: does not resolve
+  - url: https://api.drivekyte.com/
+    status: 0
+    note: does not resolve
+  - url: https://developers.drivekyte.com/
+    status: 0
+    note: does not resolve
+  - url: https://help.drivekyte.com/
+    status: 0
+    note: does not resolve
+  - url: https://status.drivekyte.com/
+    status: 0
+    note: does not resolve
+  findings:
+  - No api/docs/developers/status subdomain of kyte.com or drivekyte.com appears in
+    any Internet Archive capture.
+  - No GitHub organization for the company was found (drivekyte, kyte, kyte-tech all
+    404 on the GitHub API; the unrelated KyteInc org is an aviation/ADS-B project).
+  - No first-party packages were found for the company on the public registries.
+  - Archived drivekyte.com path inventory (2,544 unique paths) contains only consumer
+    routes plus /partner, /partnerships and /docs/privacy-policy — no developer, API
+    or reference surface.
+  - Historical kyte.com paths from 2007-2011 belong to a different, earlier company
+    (Kyte Inc., a mobile video publishing platform that did ship SDKs) and must not
+    be attributed to this Kyte.
+  artifacts_written: none
+  reason: Company published no API, SDK, developer portal or event surface, and its
+    domains no longer serve the company; every artifact type in the pipeline would
+    require fabrication.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
