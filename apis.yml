@@ -35,7 +35,7 @@ x-status-evidence: 'Probed 2026-07-19: https://www.kyte.com/ returns 403 and red
   redirects to an unrelated site (egyptjustice.com). The last archived snapshot of
   kyte.com serving Kyte marketing content is 2025-10-04; snapshots from 2025-11 onward
   are a parked lander.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
