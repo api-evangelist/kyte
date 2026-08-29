@@ -34,6 +34,9 @@ description: 'Kyte was a full-stack technology-operations company that delivered
   and never published a public developer program, API, SDK or developer portal, and
   as of this enrichment pass its web properties no longer serve the company.'
 url: https://raw.githubusercontent.com/api-evangelist/kyte/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Kyte was a consumer-facing operator and never published a public developer program, API, SDK or developer portal, and as of this enrichment pass its web properties no longer serve the company."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
