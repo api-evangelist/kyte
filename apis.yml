@@ -16,6 +16,9 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: private
+  gated_source:
+  - tag:No Public API
   label: Unknown
   confidence: low
   source: []
@@ -62,7 +65,6 @@ tags:
 - Logistics
 - Travel
 - Defunct
-- No Public API
 tags_raw:
 - Company
 - Mobility
@@ -73,7 +75,6 @@ tags_raw:
 - Logistics
 - Travel
 - Defunct
-- No Public API
 apis: []
 common:
 - name: Anthemis Portfolio Profile
@@ -158,3 +159,5 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-tags-removed:
+- No Public API
