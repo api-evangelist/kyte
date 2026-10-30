@@ -64,32 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kyte was a full-stack technology-operations company that delivered rental cars on demand to the
-customer's door — a car for a day, a few days, or longer, with no rental counters, no lines and no
-paperwork. Headquartered in San Francisco, it paired a consumer mobile and web booking experience
-with its own fleet and delivery operations, and at its peak operated in 14 US markets delivering
-tens of thousands of trips per month.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: anthemis (Data, Tech and Infrastructure thesis, growth stage)
+Kyte was a full-stack technology-operations company that delivered rental cars on demand to the customer's door, positioning itself for any trip longer than a rideshare — a car for a day, a few days, or longer — with no rental counters, no lines and no paperwork. Headquartered in San Francisco, the company combined a consumer mobile and web booking experience with its own fleet and delivery operations ("bits and atoms"), and at its peak operated in 14 US markets delivering tens of thousands of trips per month. It was a growth-stage portfolio company of Anthemis under that firm's Data, Tech and Infrastructure thesis. Kyte was a consumer-facing operator and never published a public developer program, API, SDK or developer portal, and as of this enrichment pass its web properties no longer serve the company.
 
-## Enrichment status — 2026-07-19
+**Areas:** Company · Mobility · Transportation · Car Rental · Vehicle Delivery · Consumer Marketplace · Logistics · Travel · Defunct
 
-**No public API surface. No artifacts written.**
+## Kyte on APIs.io (historical record)
 
-Kyte was a consumer-facing operator, not an API provider. The enrichment pipeline found no API,
-SDK, developer portal, documentation, event surface, or package on any public registry, and no
-GitHub organization for the company.
+Everything profiled for Kyte is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kyte/](https://apis.io/providers/kyte/)** — or go straight to one of the APIs or properties below.
 
-The company's web properties also no longer serve Kyte:
+## API Evangelist rating
 
-- `https://www.kyte.com/` → 403, redirecting to a domain-for-sale listing (`saw.com`)
-- `https://drivekyte.com/` → redirects to an unrelated parked site
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
 
-The last Internet Archive capture of `kyte.com` serving Kyte marketing content is 2025-10-04;
-captures from 2025-11 onward are a parked lander.
+## How this profile is made
 
-Full probe evidence and findings are recorded under `x-enrichment` in `apis.yml`.
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-> Note: `kyte.com` had an earlier, unrelated owner — Kyte Inc., a 2007–2011 mobile video publishing
-> platform that did ship SDKs and an API. Archived developer material on that domain from that era
-> belongs to that company, not to this one.
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kyte: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kyte/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
